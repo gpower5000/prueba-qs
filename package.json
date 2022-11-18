@@ -58,7 +58,7 @@
     "web-vitals": "^0.2.4",
     "xlsx": "^0.18.5"
   },
-  "homepage": "http://bmjhfblz.lucusvirtual.es/",
+  "homepage": "#",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

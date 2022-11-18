@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component: LinearProgress <> Render Correctly </> 1`] = `
+<div
+  className="c-linear-progress_content c-linear-progresss__size-small c-linear-progresss__color-primary"
+>
+  <div
+    className="c-linear-progress_indeterminate-one"
+  />
+  <div
+    className="c-linear-progress_indeterminate-two"
+  />
+</div>
+`;
+
+exports[`Component: LinearProgress <> Render size large </> 1`] = `
+<div
+  className="c-linear-progress_content c-linear-progresss__size-large c-linear-progresss__color-primary"
+>
+  <div
+    className="c-linear-progress_indeterminate-one"
+  />
+  <div
+    className="c-linear-progress_indeterminate-two"
+  />
+</div>
+`;
+
+exports[`Component: LinearProgress <> Render size normal </> 1`] = `
+<div
+  className="c-linear-progress_content c-linear-progresss__size-normal c-linear-progresss__color-primary"
+>
+  <div
+    className="c-linear-progress_indeterminate-one"
+  />
+  <div
+    className="c-linear-progress_indeterminate-two"
+  />
+</div>
+`;
+
+exports[`Component: LinearProgress <> Render size small </> 1`] = `
+<div
+  className="c-linear-progress_content c-linear-progresss__size-small c-linear-progresss__color-primary"
+>
+  <div
+    className="c-linear-progress_indeterminate-one"
+  />
+  <div
+    className="c-linear-progress_indeterminate-two"
+  />
+</div>
+`;

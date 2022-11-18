@@ -1,0 +1,300 @@
+:root {
+    --width-lateral-menu: 250px;
+    --min-width-lateral-menu: 48px;
+}
+.c-lateral-menu {
+    width: var(--width-lateral-menu);
+    min-width: var(--width-lateral-menu);
+    height: 100vh;
+    background: var(--white-color);
+    border-right: 1px solid var(--shadow-bg-menu);
+    cursor: pointer;
+    z-index: 10;
+    box-shadow: 0 0 10px var(--shadow-bg-menu);
+    transition: .5s;
+}
+.c-lateral-menu svg path {
+    stroke: inherit;
+}
+.c-lateral-menu__logo {
+    width: 100%;
+    padding: 8px 30px;
+    display: flex;
+    align-items: center;
+    height: 65px;
+    margin-bottom: 5px;
+}
+.c-lateral-menu__img-first {
+    width: 100%;
+}
+.c-lateral-menu__img-second {
+    width: 0;
+    transition: all 0s;
+}
+.c-lateral-menu__content-menu {
+    display: flex;
+    height: calc(100% - 160px);
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: initial;
+}
+.c-lateral-menu__routes {
+    /* overflow: scroll; */
+    /* /* overflow: auto; */
+    /* -ms-overflow-style: none;
+    scrollbar-width: none; */
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.c-lateral-menu__routes::-webkit-scrollbar {
+    width: 4px;
+}
+
+/* Track */
+.c-lateral-menu__routes::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+
+/* Handle */
+.c-lateral-menu__routes::-webkit-scrollbar-thumb {
+    background: var(--gray-normal-color);
+}
+
+/* Handle on hover */
+/* .c-lateral-menu__routes::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+} */
+
+
+.c-lateral-menu__project .c-item-lateral-menu >a,
+.c-lateral-menu__routes .c-item-lateral-menu >a {
+    width: var(--width-lateral-menu);
+}
+.c-lateral-menu__actions .c-item-lateral-menu >a {
+    font-weight: bold;
+    width: var(--width-lateral-menu);
+}
+.c-lateral-menu__actions .c-item-lateral-menu >a:hover {
+    color: var(--color-secondary);
+}
+.c-lateral-menu .c-lateral-menu__actions .c-item-lateral-menu.--leave {
+    border-top: 2px solid var(--gray-soft-color);
+}
+.c-lateral-menu .c-lateral-menu__actions .c-item-lateral-menu.--toogle a {
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+}
+.c-lateral-menu .c-lateral-menu__actions .c-item-lateral-menu.--toogle a::after {
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+}
+.c-lateral-menu .c-lateral-menu__actions .c-item-lateral-menu.--toogle a:focus {
+    background-color: var(--item-menu-collapse);
+}
+.c-lateral-menu .c-lateral-menu__actions .c-item-lateral-menu.--toogle a:focus::after {
+    background-color: var(--item-menu-collapse);
+}
+
+
+.c-lateral-menu__actions .c-item-lateral-menu.--leave .c-item-lateral-menu__icon {
+    transform: rotate(0deg);
+}
+.c-lateral-menu__project .c-item-lateral-menu >a::after {
+    display: none;
+}
+.c-lateral-menu__project .c-item-lateral-menu__icon {
+    width: var(--min-width-lateral-menu);
+    min-width: var(--min-width-lateral-menu);
+    left: 0;
+}
+.c-lateral-menu__project .c-item-lateral-menu a span {
+    color: var(--item-menu-letter);
+    font-size: 18px;
+    font-weight: bold;
+}
+.c-lateral-menu__project .c-item-lateral-menu {
+    background: var(--item-menu-project);
+}
+.c-lateral-menu__project .c-item-lateral-menu a:hover {
+    background: transparent;
+}
+.c-lateral-menu__project .c-item-lateral-menu__icon span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 4px;
+    padding: 0;
+    font-size: 20px;
+}
+.c-lateral-menu__project .c-item-lateral-menu__capital-letter {
+    background: var(--item-menu-project);
+    font-size: 20px;
+}
+.c-lateral-menu__congrats {
+    color: var(--red-default-color);
+    display: flex;
+    justify-content: center;
+    height: 42px;
+}
+.c-lateral-menu__congrats b {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.c-lateral-menu.c-lateral-menu__collapse {
+    width: var(--min-width-lateral-menu);
+    min-width: var(--min-width-lateral-menu);
+}
+.c-lateral-menu.c-lateral-menu__collapse .c-lateral-menu__logo {
+    padding: 8px 6px;
+}
+.c-lateral-menu.c-lateral-menu__collapse .c-lateral-menu__img-second {
+    width: 100%;
+    transition-delay: 0.4s;
+}
+.c-lateral-menu.c-lateral-menu__collapse .c-lateral-menu__img-first {
+    width: 0;
+    transition: all .4s;
+}
+.c-lateral-menu.c-lateral-menu__collapse .c-lateral-menu__congrats span span {
+    display: none;
+}
+.c-lateral-menu.c-lateral-menu__collapse .c-lateral-menu__congrats span b:last-child {
+    display: none;
+}
+.c-lateral-menu.c-lateral-menu__collapse .c-lateral-menu__routes .c-item-lateral-menu >a span {
+    opacity: 0;
+    transition: .8s cubic-bezier(0.53, 0.25, 0.1, 0.81);
+}
+.c-lateral-menu.c-lateral-menu__collapse .c-lateral-menu__routes .c-item-lateral-menu:hover {
+    overflow: initial;
+}
+.c-lateral-menu.c-lateral-menu__collapse .c-lateral-menu__routes .c-item-lateral-menu:hover >a span,
+.c-lateral-menu.c-lateral-menu__collapse .c-lateral-menu__routes .c-item-lateral-menu:hover >a .c-item-lateral-menu__hidden-text {
+    opacity: 1;
+    transition: none;
+    background: var(--white-color);
+    box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.2), 
+                0px 3px 15px -4px rgba(0,0,0,0.12);
+    padding-left: 10px;
+    border-radius: 0 4px 4px 0;
+}
+.c-lateral-menu.c-lateral-menu__collapse .c-lateral-menu__routes .c-item-lateral-menu:hover >a .c-item-lateral-menu__hidden-text {
+    position: fixed;
+    left: calc(var(--min-width-lateral-menu) - 5px);
+    width: calc(var(--width-lateral-menu) - var(--min-width-lateral-menu));
+    display: block;
+}
+.c-lateral-menu.c-lateral-menu__collapse .c-lateral-menu__actions .c-item-lateral-menu .c-item-lateral-menu__icon {
+    transform: rotate(0);
+}
+.c-lateral-menu__actions.--menu-top .c-item-lateral-menu svg {
+    width: 20px;
+    height: 20px;
+    fill: var(--black-color);
+    outline: none;
+}
+.c-lateral-menu__actions.--menu-top .c-item-lateral-menu a {
+    outline-color: red;
+}
+.c-lateral-menu__actions.--menu-top .c-item-lateral-menu a::after {
+    content: "";
+    display: none;
+}
+.c-lateral-menu__submenu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+    /* background: var(--item-menu-project); */
+    position: relative;
+}
+.c-lateral-menu__submenu.--open {
+    max-height: 1000px;
+    transition: max-height 0.5s ease-in-out;
+}
+.c-lateral-menu__submenu .c-item-lateral-menu:first-child a {
+  box-shadow: inset 0px 1px 2px 0px rgb(0 0 0 / 25%); 
+}
+.c-lateral-menu__submenu .c-item-lateral-menu:last-child a {
+  box-shadow: inset 1px -3px 5px rgb(0 0 0 / 10%), inset 0px -1px 0 rgb(0 0 0 / 5%); 
+}
+.c-item-lateral-menu.--menu >a::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    display: block;
+    width: 5px;
+    height: 5px;
+    margin-top: -2px;
+    content: '';
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    border-width: 1px 1px 0 0;
+    border-style: solid;
+    transition: ease-in-out .3s all;
+}
+.c-item-lateral-menu.--menu.--open >a::before {
+    transform: rotate(135deg);
+    transition: ease-in-out .3s all;
+}
+.c-lateral-menu.c-lateral-menu__collapse .c-item-lateral-menu.--menu >a::before {
+    left: calc(var(--min-width-lateral-menu) - 12px);
+}
+
+@media only screen and (max-width: 991px) {
+    .l-intranet__bg.--open {
+        width: 100vw;
+        height: 100vh;
+        background: var(--menu-bg-color);
+        transition: ease .3s background;
+        position: absolute;
+        z-index: 9;
+    }
+    .c-lateral-menu {
+        position: absolute;
+        box-shadow: none;
+    }
+    .c-lateral-menu.c-lateral-menu__collapse {
+        width: var(--min-width-lateral-menu);
+        min-width: var(--min-width-lateral-menu);
+        position: absolute;
+        box-shadow: 0 0 10px var(--shadow-bg-menu);
+    }
+    .l-intranet__main-page {
+        padding-left: var(--min-width-lateral-menu);
+    }
+    .c-lateral-menu.c-lateral-menu__collapse .c-lateral-menu__congrats b {
+        display: none;
+    }
+    .c-lateral-menu .c-lateral-menu__actions .c-item-lateral-menu.--leave {
+        display: flex;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (max-width: 543px) {
+    .c-lateral-menu {
+        position: absolute;
+    }
+    .c-lateral-menu.c-lateral-menu__collapse {
+        width: 0;
+        min-width: 0;
+        position: absolute;
+    }
+    .l-intranet__main-page {
+        padding-left: 0;
+    }
+    .c-lateral-menu__actions.--menu-top svg {
+        margin-right: 3px;
+        margin-left: 3px;
+        margin-bottom: 2px;
+    }
+    .c-lateral-menu.c-lateral-menu__collapse .c-item-lateral-menu.--menu >a::before {
+        left: inherit;
+    }
+}

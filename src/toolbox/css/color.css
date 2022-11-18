@@ -1,0 +1,70 @@
+:root {
+
+    --color-primary: #fe0000;
+    --color-secondary: #000000; 
+    --link-color: #f8f9fa;
+    --dropdown-menu-color: #252525;
+    --menu-element-label-color: #3a3a3a;
+    --navbar-color: #343a40;
+    --navbar-bg-color: #F5F4F7;
+    --page-item-hover: #dee2e6;
+    --menu-bg-color: rgba(0,0,0,0.5);
+    
+    --table-row-hover-color: #d6d8db;
+    --shadow-gb-button: rgba(0,0,0,0.16);
+
+    /* Colors for table */
+    --hightlight-header-table-color: #707070;
+    --dragabble-gold: gold;
+
+    --success-table-color: #b0f1cb7a;
+    --error-table-color: #f174697a;
+    --delete-table-color: #ffd3507a;
+    
+    --success-hover-table-color: #81f1aec7;
+    --delete-hover-table-color: #ffd350ab;
+    --error-hover-table-color: #f17469af;
+    --regular-hover-table-color: rgb(245 245 245);
+    --regular-active-table-color: rgb(230 230 230);
+
+    --gray-soft-color: #F5F4F7;
+    --green-light-color: #15A550;
+    --white-color: #ffffff;
+    --black-color: black;
+    --adobe-color: #d21104;
+    --shadow-bg-menu: #E6E3EB;
+    --gray-default-color: #707070;
+    --gray-normal-color: #8e8e8e;
+    --bg-scrool-bar: #888;
+
+    --green-soft-color: #17B057;
+    --green-blocked-color: #73e09f;
+
+    --pdf-color : #c2162f;
+    --pdf-color-hover : #ad0b00;
+    --conti-color-hover: #222;
+
+    --guide-state-1: #1884da;
+    --guide-state-2: #ff9800;
+    --guide-state-3: green;
+    --guide-state-4: #ff9800;
+    --guide-state-5: red;
+
+    --text-dark-color: #ccc;
+    --conti-table-color: #92fba3;
+    
+    --gray-default-color: #707070;
+    --green-light-color: #28a745;
+    --item-menu-selected: #E0F2EB;
+    --item-menu-collapse: #F3F1FD;
+    /* --item-menu-project: rgba(227,32,18,0.2); */
+    --item-menu-project: #e3121221;
+    --item-menu-letter: #e80d0d;
+    --red-default-color: #fe0000;
+    --red-strong-color: #D72525;
+    --red-dark-color: #bb190e;
+
+    --shadow-bg-color: rgba(0,0,0,0.4);
+    --login-bg-color: rgba(0,0,0,0.4);
+    --login-footer: #000;
+}

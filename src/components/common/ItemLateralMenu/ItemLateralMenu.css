@@ -1,0 +1,80 @@
+.c-item-lateral-menu {
+    width: 100%;
+    overflow: hidden;
+}
+.c-item-lateral-menu a {
+    outline: none;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: var(--gray-default-color);
+    padding: 0 0 0 48px;
+    font-size: 15px;
+    position: relative;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+}
+.c-item-lateral-menu a span {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    width: 100%;
+}
+.c-item-lateral-menu__icon {
+    position: absolute;
+    top: 0;
+    left: 13px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.c-item-lateral-menu__icon svg {
+    color: var(--gray-default-color);
+    width: 22px;
+    height: 22px;
+}
+.c-item-lateral-menu a::after {
+    content: "";
+    display: block;
+    width: 3px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.c-item-lateral-menu a:active,
+.c-item-lateral-menu a:active::after {
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+}
+.c-item-lateral-menu a:hover,
+.c-item-lateral-menu a:hover::after {
+    color: black;
+    background-color: var(--item-menu-collapse);
+}
+.c-item-lateral-menu a:hover .c-item-lateral-menu__icon svg {
+    color: black;
+}
+.c-item-lateral-menu--active a,
+.c-item-lateral-menu--active a:hover {
+    background: var(--item-menu-selected);
+    color: var(--green-light-color);
+    font-weight: 500;
+}
+.c-item-lateral-menu--active .c-item-lateral-menu__icon svg {
+    color: var(--green-light-color);
+}
+.c-item-lateral-menu--active a::after,
+.c-item-lateral-menu--active a:hover::after {
+    background-color: var(--green-light-color);
+    border-bottom: 1px solid var(--green-light-color);
+    border-top: 1px solid var(--green-light-color);
+}
+.c-item-lateral-menu--active a:hover .c-item-lateral-menu__icon svg {
+    color: var(--green-light-color);
+}
+
+.c-item-lateral-menu .c-item-lateral-menu__hidden-text {
+    display: none;
+}

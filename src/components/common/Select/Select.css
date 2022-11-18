@@ -1,0 +1,13 @@
+.c-select {
+    width: 100%;
+}
+.c-select > div {
+    min-height: 34px;
+    margin-bottom: -2px;
+}
+.c-select > div > div > div {
+    margin-bottom: -2px;
+}
+.c-select a[aria-label] {
+    padding: 10px !important;
+}

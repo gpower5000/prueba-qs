@@ -1,0 +1,96 @@
+.c-linear-progress_content {
+	height: 4px;
+	overflow: hidden;
+	position: relative;
+}
+.c-linear-progress_indeterminate-one{
+	top: 0;
+    left: 0;
+    bottom: 0;
+	position: absolute;
+	width: auto;
+	transition: transform 0.2s linear;
+    transform-origin: left;
+    animation: linearProgress-keyframes-indeterminate1 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite;
+}
+.c-linear-progress_indeterminate-two {
+	top: 0;
+    left: 0;
+	bottom: 0;
+	position: absolute;
+	width: auto;
+	transition: transform 0.2s linear;
+    transform-origin: left;
+    animation: linearProgress-keyframes-indeterminate2 2.1s cubic-bezier(0.165, 0.84, 0.44, 1) 1.15s infinite;
+}
+
+
+.c-linear-progress_content.c-linear-progresss__color-primary {
+    background-color: var(--white-color);
+}
+
+.c-linear-progress_content.c-linear-progresss__color-primary .c-linear-progress_indeterminate-one{
+    background-color: var(--green-soft-color);
+}
+.c-linear-progress_content.c-linear-progresss__color-primary .c-linear-progress_indeterminate-two{
+    background-color: var(--green-soft-color);
+}
+
+.c-linear-progress_content.c-linear-progresss__color-secondary {
+    background-color: var(--white-color);
+}
+
+.c-linear-progress_content.c-linear-progresss__color-secondary .c-linear-progress_indeterminate-one {
+    background-color: var(--green-blocked-color);
+
+}
+.c-linear-progress_content.c-linear-progresss__color-secondary .c-linear-progress_indeterminate-two {
+    background-color: var(--green-blocked-color);
+}
+
+.c-linear-progress_content.c-linear-progresss__size-small {
+    height: 2px;
+}
+.c-linear-progress_content.c-linear-progresss__size-normal {
+    height: 4px;
+}
+.c-linear-progress_content.c-linear-progresss__size-large {
+    height: 6px;
+}
+
+.c-linear-progress_content.c-linear-progresss__finish .c-linear-progress_indeterminate-one {
+    background-color: var(--white-color);
+    animation: none;
+}
+.c-linear-progress_content.c-linear-progresss__finish .c-linear-progress_indeterminate-two {
+    background-color: var(--white-color);
+    animation: none;
+}
+@keyframes linearProgress-keyframes-indeterminate1 {
+	0% {
+		left: -35%;
+		right: 100%;
+	}
+	60% {
+		left: 100%;
+		right: -90%;
+	}
+	100% {
+		left: 100%;
+		right: -90%;
+	}
+}
+@keyframes linearProgress-keyframes-indeterminate2 {
+	0% {
+		left: -200%;
+		right: 100%;
+	}
+	60% {
+		left: 107%;
+		right: -8%;
+	}
+	100% {
+		left: 107%;
+		right: -8%;
+	}
+}
